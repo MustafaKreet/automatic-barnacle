@@ -1,0 +1,24 @@
+''' Imports must be at the top '''
+import tkinter as tk
+from tkinter import ttk
+
+#Import ttk is a module that is used to style the tkinter widgets. Just like CSS
+
+
+win1 = tk.Tk() #add window ( Create Instance )
+win1.title('KLS-MS') #window title
+win1.resizable(False , False) #Is Win Resizable
+win1.geometry("500x500") #Win-Size
+"""-------------------------------------""" # DEF Events Befor You Call It as Commands
+def click_me():
+    but1.configure(text="Thanks")
+
+''' Label1  '''
+lab1 = ttk.Label(win1 , text="Hi There") #label_Content(Var)
+lab1.grid(column=0,row=0)#label_position
+''' Button1  '''
+but1 = ttk.Button(win1 , text="Button1" , command=click_me) #But1 Def
+but1.grid(column=1,row=0) #But1_Position
+''' Click_me '''
+
+win1.mainloop() #Start GUI
