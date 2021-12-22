@@ -12,7 +12,8 @@ win1.geometry("500x500") #Win-Size
 """-------------------------------------""" # DEF Events Befor You Call It as Commands
 def click_me():
     but1.configure(text="Thanks")
-
+    lab1.configure(text="Done")
+    lab1.configure(foreground="red")
 ''' Label1  '''
 lab1 = ttk.Label(win1 , text="Hi There") #label_Content(Var)
 lab1.grid(column=0,row=0)#label_position
